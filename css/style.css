@@ -1,64 +1,64 @@
-html{
+html {
     background-color: bisque;
     font-family: sans-serif;
     font-size: 15px;
 }
 
-body{
+body {
     margin: 0;
 }
 
-.main-header{
+.main-header {
     margin: 10px;
     display: flex;
     justify-content: space-around;
-   
+
 }
 
-.logo{
+.logo {
     width: 25vw;
     border-radius: 100%;
 }
 
-.logo-2{
+.logo-2 {
 
     width: 25vw;
 }
 
-.nav-bar a{
+.nav-bar a {
     text-decoration: none;
     color: black;
     margin-left: 10vw;
     margin-right: 10vw;
     display: flex;
     flex-direction: column;
-   
+
 
 }
 
-.nav-bar{
+.nav-bar {
     text-align: center;
     margin-top: 15px;
     background-color: rgba(255, 255, 255, 0.771);
     border-bottom: rgb(255, 132, 0) solid 3px;
-   
+
 }
 
-.titular{
+.titular {
 
     text-align: center;
     font-size: 20px;
 }
 
-.img-ciudad{
+.img-ciudad {
     width: 100%;
     height: auto;
 }
 
 
-.contenedor-info{
+.contenedor-info {
 
-    margin:15px;
+    margin: 15px;
 }
 
 ul {
@@ -68,11 +68,11 @@ ul {
     padding-left: 0;
 }
 
-li{
+li {
     display: inline;
 }
 
-.nav-bar-footer{
+.nav-bar-footer {
 
     display: flex;
     justify-content: space-around;
@@ -80,54 +80,116 @@ li{
     margin-left: 0;
     list-style: none;
     border-bottom: rgb(255, 132, 0) solid 3px;
-    
-   
+
+
 }
 
-.nav-bar-footer  a{
+.nav-bar-footer a {
     text-decoration: none;
     color: black;
-    
-    
-    
-}
-
-.nav-bar-footer  li{
-list-style-type:none;
-margin-left:0;
-
 
 
 
 }
 
+.nav-bar-footer li {
+    list-style-type: none;
+    margin-left: 0;
 
 
 
-/* Medias queries */ 
+
+}
+
+
+/* Nosotros */
+
+.alumnos {
+
+    display: flex;
+    margin: 10px 0 20px 10px;
+
+
+
+}
+
+
+
+.img-perfil {
+
+    width: 30vw;
+    height: 40vw;
+    border: solid 1px gray;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    object-fit: cover;
+
+}
+
+.texto-perfil {
+
+    padding: 10px;
+
+
+}
+
+.contenedor-button {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.contenedor-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.button-linkedin {
+    display: inline-block;
+    background-color: #0077B5;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button-linkedin:hover {
+    background-color: #005A8E;
+}
+
+.button-linkedin:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 119, 181, 0.5);
+}
+
+/* Medias queries */
 
 @media (min-width: 700px) {
 
-    .nav-bar{
-    
+    .nav-bar {
+
         background-color: white;
-        
-    
-       
+
+
+
     }
 
-    .nav-bar a{
-       
+    .nav-bar a {
+
         display: inline;
-       
-    
+
+
     }
 
-    .titular{
+    .titular {
         font-size: 40px;
     }
 
-    html{
+    html {
         font-size: 18px;
     }
 
@@ -139,34 +201,34 @@ margin-left:0;
 
 @media (min-width: 1050px) {
 
-    html{
+    html {
         font-size: 25px;
     }
 
-    .logo{
+    .logo {
 
         width: 20vw;
     }
 
-    .titular{
+    .titular {
         font-size: 50px;
     }
 
-    .nav-bar{
-    
+    .nav-bar {
+
         background-color: white;
-        
-       
+
+
     }
 
-    .nav-bar a{
-       
+    .nav-bar a {
+
         display: inline;
-       
-    
+
+
     }
 
-    
 
-   
-    }
+
+
+}
