@@ -1,12 +1,7 @@
-html{
-    box-sizing: border-box;
-}
-*{
-    box-sizing: border-box;
-}
+
 body{
     color: #333;
-    background-color: #fafafa;
+    
 }
 .page{
    max-width: 800px;
@@ -20,14 +15,14 @@ body{
     margin:20px;
 }
 label, input[type="text"]{
-    with:100%;
+    width:100%;
     display: block;
 }
 input{
     vertical-align:middle ;
 }
 textarea{
-    dispaly:block;
+    display:block;
     width: 100%;
     resize:vertical;
 }
@@ -44,6 +39,7 @@ input[type="text"],input[type="email"],textarea{
     border-radius: 4px;
     padding: 8px 10px;
     color:#333;
+   box-sizing: border-box;
 }
 .help{
     font-size: 12px;
