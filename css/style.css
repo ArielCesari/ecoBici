@@ -101,6 +101,14 @@ li {
 
 }
 
+.copy{
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
 
 /* Nosotros */
 
