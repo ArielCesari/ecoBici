@@ -8,7 +8,6 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/stylesContacto.css">
     <title>Contacto</title>
 </head>
 
@@ -37,62 +36,36 @@
     </header>
 
     <body>
-        <main class="page">
-            <h1>Contacto</h1>
-            <form action="/server" method="get">
-                <div class="form-group">
-                    <label for="name">nombre</label>
-                    <input id="name" name="name" type="text"
-                    placeholder="ingrese su nombre completo" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">email</label>
-                    <input id="email" name="email" type="ingrese su correo electronico" required>
-    
-                </div>
-                <div class="form-group">
-                    <fieldset>
-                        <legend>presupuesto</legend>
-                        <input id="10000" name="budge"
-                        type="radio"><label for="10000">$10000</label>
-    
-                        <input id="5000" name="budge"
-                        type="radio"><label for="5000">$5000</label>
-    
-                        <input id="1000" name="budge"
-                        type="radio"><label for="1000">$1000</label>
-                        <div class="help">este presupuesto es la base y no el total</div>
-                    </fieldset>
-    
-                </div>
-                <div calss="form-group">
-                    <label for="type">tipo de proyecto</label>
-                    <select id="type" name="type" required>
-                        <option disabled selected value=""> seleccione uno</option>
-                        <option>website</option>
-                        <option>webapp</option>
-                        <option>mobile app</option>
-                        <option>diseño</option>
-                    </select>
-    
-                </div>
-                <div class="form-group">
-                    <label for="description">descripcion</label>
-                    <textarea id="description" rows="5" 
-                     name="descripcion" required></textarea>
-                    <div class="help">escribe una descripcion del proyecto en al menos 500 palabras</div>
-    
-                </div>
-                <div class="form-group">
-                   <label for="terms">
-                       <input id="terms" name="terms"
-                       type="checkbox">
-                       <span>acepto los terminos y condiciones</span>
-                   </label>
-                </div>
-    
-                <button>enviar</button>
+        <main>
+
+            <h2 class="titular-h2">Recibí nuestras novedades</h2>
+            <form id="form">
+
+
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Ej: Tu Nombre">
+
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ej: Tu apellido">
+
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="text" id="correo" name="correo" placeholder="tucorreo@gmail.com">
+
+
+
+                <label for="Mensaje">Mensaje:</label>
+                <textarea id="Mensaje" name="mensaje" placeholder=" Mínimo 100 carácteres"></textarea>
+
+                
+                <label>
+                    <input type="checkbox" name="suscripcion" value="si"> Suscribirme al boletín de noticias
+                </label>
+                <button type="submit">Enviar</button>
+
             </form>
+
         </main>
     </body>
 
@@ -116,9 +89,7 @@
 
 
     </footer>
-    <div class="boton">
-        <button class="oscuro">Dark Mode</button>
-    </div>
+  
 
 </body>
 
