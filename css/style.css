@@ -18,6 +18,7 @@ html {
 header{
 
     background-image: url(../img/fondo.jpg);
+    background-size: 50vw;
 }
 
 body {
@@ -360,6 +361,12 @@ li {
    
    
     }
+
+    header{
+
+       
+        background-size: 22vw;
+    }
     
 
 
@@ -397,6 +404,13 @@ li {
 
     }
 
+
+    header{
+
+       
+        background-size: 18vw;
+    }
+    
 
 
 
