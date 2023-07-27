@@ -58,15 +58,25 @@ body {
 .burger-menu {
     display: block;
     background-color: var(--color-celeste);
-    color: #ffffff;
-    max-width: 40px;
-    max-height: 40px;
+    color: white;
     padding: 10px 0;
-    margin-top: 15px;
-    border-radius: 8px;
+    width: 40px;
     text-align: center;
-    font-size: 18px;
-    margin-left: 43%;
+    border-radius: 8px;
+
+}
+
+.burger-container {
+
+    display: flex;
+
+
+}
+
+.burger-center {
+
+    padding: 8px 14px;
+    margin: auto;
 
 }
 
@@ -181,15 +191,15 @@ li {
 }
 
 
-.fa-bicycle{
-    color:var(--color-negro);
+.fa-bicycle {
+    color: var(--color-negro);
     font-weight: bold;
 }
 
-.contenedor-info{
+.contenedor-info {
 
 
-    padding:15PX;
+    padding: 15PX;
 }
 
 /* Nosotros */
@@ -307,7 +317,7 @@ li {
 
 
 
-.center-button{
+.center-button {
 
     text-align: center;
 }
@@ -468,15 +478,18 @@ li {
 
 
 
-    .burger-menu {
+    .burger-menu,
+    .burger-container {
         display: none;
     }
 
-    .contenedor-info{
+    .contenedor-info {
 
 
         padding: 10px;
     }
+
+
 
 
 
@@ -544,18 +557,16 @@ li {
 
 
 
-    .burger-menu {
+    .burger-menu,
+    .burger-container {
         display: none;
     }
 
-    .contenedor-info{
+    .contenedor-info {
 
 
         padding: 10px;
     }
-
-
-
 
 
 
