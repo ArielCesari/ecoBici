@@ -182,9 +182,16 @@ li {
 
 
 .fa-bicycle{
-    color: #008E51;
+    color:var(--color-negro);
     font-weight: bold;
 }
+
+.contenedor-info{
+
+
+    padding:15PX;
+}
+
 /* Nosotros */
 
 .alumnos {
@@ -271,9 +278,10 @@ li {
 }
 
 
-.grafico_año {
+.grafico-año {
 
-    width: 100vw;
+    width: 100%;
+    padding: 0;
 }
 
 .button-estaciones {
@@ -464,6 +472,12 @@ li {
         display: none;
     }
 
+    .contenedor-info{
+
+
+        padding: 10px;
+    }
+
 
 
 
@@ -533,6 +547,14 @@ li {
     .burger-menu {
         display: none;
     }
+
+    .contenedor-info{
+
+
+        padding: 10px;
+    }
+
+
 
 
 
