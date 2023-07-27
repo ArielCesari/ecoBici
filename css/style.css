@@ -1,9 +1,9 @@
 :root {
     --color-blanco: #E6F4F1;
-    --color-amarillo: #FFDB2E;
     --color-celeste: #75AADB;
     --color-azul: #00274D;
     --color-negro: #28161C;
+    --color-verde:#52B172;
 }
 
 
@@ -359,7 +359,7 @@ li {
 }
 
 #form button[type="submit"] {
-    background-color: #52B172;
+    background-color:var(--color-verde);
     color: var(--color-blanco);
     font-weight: bold;
     padding: 10px 20px;

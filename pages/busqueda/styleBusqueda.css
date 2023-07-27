@@ -2,7 +2,7 @@
 
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,13 +10,13 @@
     font-size: 15px;
 }
 
-body{
+body {
     background: #2681be;
 }
 
 
-section{
-    
+section {
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,8 +24,8 @@ section{
 }
 
 
-input{
-    width: 50vw;
+input {
+    width: 80vw;
     padding: 10px;
     outline: none;
     border: 5px solid #CCD1E4;
@@ -33,7 +33,7 @@ input{
     margin-top: 20px;
 }
 
-#listaArticulos{
+#listaArticulos {
     font-size: 30px;
     margin-top: 20px;
     list-style: none;
@@ -42,11 +42,12 @@ input{
     text-align: center;
     cursor: pointer;
 }
-li{
+
+li {
     margin: 5px 0;
 }
 
-.filtro{
+.filtro {
     display: none;
 }
 
@@ -94,29 +95,42 @@ li{
 
     }
 
+    input {
+
+        width: 55vw;
+    }
+
+
+
+}
+
+
+@media (min-width: 1050px) {
+
+    .nav-bar a {
+
+        display: inline;
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        color: var(--color-blanco);
 
 
     }
 
-
-    @media (min-width: 1050px){
-
-        .nav-bar a {
-
-            display: inline;
-            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-            color: var(--color-blanco);
-    
-    
-        }
-    
-        .nav-bar a:hover {
-            transform: scale(1.1);
-            color: var(--color-negro);
-    
-    
-        }
-
+    .nav-bar a:hover {
+        transform: scale(1.1);
+        color: var(--color-negro);
 
 
     }
+
+    input {
+
+        width: 50vw
+    }
+
+
+
+
+
+
+}
