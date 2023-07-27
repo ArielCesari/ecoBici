@@ -410,12 +410,20 @@ li {
 
 .fade-in {
     opacity: 0;
-    transition: opacity 1s ease;
+    transition: opacity 2s ease-in-out;
+    display: flex;
   }
   
-  .fade-in-active {
+.fade-in-active {
     opacity: 1;
-  }
+    display: flex;
+    margin: 1rem;
+}
+
+.txto{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
