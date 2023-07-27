@@ -288,11 +288,7 @@ li {
 }
 
 
-.grafico-año {
 
-    width: 100%;
-    padding: 0;
-}
 
 .button-estaciones {
     display: inline-block;
@@ -408,22 +404,70 @@ li {
     display: block;
 }
 
-.fade-in {
-    opacity: 0;
-    transition: opacity 2s ease-in-out;
-    display: flex;
-  }
-  
-.fade-in-active {
-    opacity: 1;
-    display: flex;
-    margin: 1rem;
+/* graficos.html*/
+
+.grafico-año1, .grafico-año2, .grafico-año3, .grafico-año4{
+
+    border-radius: 10px;
+    margin:3px;
+    border: solid 1px var(--color-azul)
 }
 
-.txto{
-    display: flex;
-    flex-direction: column;
+.main-graficos{
+
+    margin:10px
 }
+
+.fade-in {
+   
+    .grafico-año1 {
+        width:90vw;
+        height: auto;
+    }
+
+    .grafico-año2 {
+
+        width:90vw;
+        height: auto;
+
+
+    }
+
+    .grafico-año3 {
+
+        width:90vw;
+        height: auto;
+
+
+    }
+
+    .grafico-año4 {
+
+        width:90vw;
+        height: auto;
+
+
+    }
+}
+
+
+@media (min-width: 769px) {
+    .fade-in {
+        display: flex;
+        align-items: center;
+        
+        .grafico-año1, .grafico-año2, .grafico-año3, .grafico-año4{
+            max-width: 50%;
+            height: auto;
+        }
+    }
+
+    .txto {
+     
+        width: 45%;
+    }
+}
+
 
 
 
@@ -506,6 +550,14 @@ li {
     }
 
 
+    .fade-in {
+   
+        .grafico-año1 {
+            width:90vw;
+            height: auto;
+        }
+
+    }
 
 
 
@@ -582,6 +634,14 @@ li {
 
 
         padding: 10px;
+    }
+
+    .grafico-año4 {
+
+        width:90vw;
+        height: auto;
+
+
     }
 
 
