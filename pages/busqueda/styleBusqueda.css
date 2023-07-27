@@ -105,6 +105,10 @@ img{
         width: 55vw;
     }
 
+    img{
+        width: 55vw;
+    }
+
 
 
 }
@@ -131,6 +135,11 @@ img{
     input {
 
         width: 50vw
+    }
+
+    img{
+
+        width: 30vw;
     }
 
    
