@@ -15,7 +15,7 @@ html {
     font-size: 15px;
 }
 
-header{
+header {
 
     background-image: url(../img/fondo.jpg);
     background-size: 50vw;
@@ -29,7 +29,7 @@ body {
     margin: 10px;
     display: flex;
     justify-content: space-around;
-    
+
 
 }
 
@@ -46,19 +46,44 @@ body {
 
 .nav-bar a {
     text-decoration: none;
-    color: var(--color-blanco);
+    color: var(--color-negro);
     margin-left: 5vw;
     margin-right: 5vw;
     display: flex;
     flex-direction: column;
-    
 
+
+}
+
+.burger-menu {
+    display: block;
+    background-color: var(--color-celeste);
+    color: #ffffff;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin-left: 43%;
+
+}
+
+
+.nav-bar {
+    display: none;
+}
+
+
+.nav-bar.active {
+    display: block;
 }
 
 
 
 
-a{
+a {
 
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 
@@ -66,16 +91,16 @@ a{
 
 a:hover {
     transform: scale(1.1);
-    color: var(--color-negro); 
-    
-   
+    color: var(--color-negro);
+
+
 }
 
 .nav-bar {
     text-align: center;
     margin-top: 15px;
-    background-color: #75AADB;
-    border-bottom: var(--color-azul) solid 3px;
+    background-color: var(--color-blanco);
+    border-bottom: var(--color-azul) solid 1px;
 
 }
 
@@ -85,7 +110,7 @@ a:hover {
     font-size: 20px;
 }
 
-.titular-h2{
+.titular-h2 {
     text-align: center;
 }
 
@@ -130,9 +155,9 @@ li {
 
 .nav-bar-footer a:hover {
     transform: scale(1.1);
-    color: var(--color-negro); 
-    
-   
+    color: var(--color-negro);
+
+
 }
 
 
@@ -205,6 +230,7 @@ li {
 
 
 }
+
 .contenedor-button {
 
     display: flex;
@@ -242,7 +268,7 @@ li {
 /* Formulario */
 
 #form {
-    background-color:var(--color-celeste);
+    background-color: var(--color-celeste);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -272,9 +298,9 @@ li {
 
 #form textarea {
     height: 150px;
-  }
-  
-  #form button[type="submit"] {
+}
+
+#form button[type="submit"] {
     background-color: var(--color-amarillo);
     color: var(--color-negro);
     font-weight: bold;
@@ -287,10 +313,10 @@ li {
     margin: 0 auto;
     transform: scale(1);
     transition: transform 0.3s ease-in-out;
-   
-  }
 
-  #form button[type="submit"]:hover {
+}
+
+#form button[type="submit"]:hover {
     transform: scale(1.1);
 }
 
@@ -301,43 +327,56 @@ li {
 
     background-color: #198754;
     border: 2px #198754;
-  }
-  
-  .es-invalido {
+}
+
+.es-invalido {
     background-color: #F8D7DA;
     border: 2px #842029;
-  }
-  
-  #errores {
-  
+}
+
+#errores {
+
     color: #842029;
     background-color: #F8D7DA;
     font-size: large;
     text-align: center;
     border-radius: 10px;
     list-style: none;
-    
-    
-  }
 
-  #errores li{
+
+}
+
+#errores li {
     display: block;
-  }
-  
+}
+
 
 
 
 /* Medias queries */
 
-@media (min-width: 700px) {
+@media (min-width: 585px) {
 
 
     .nav-bar a {
 
         display: inline;
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        color: var(--color-blanco);
 
 
     }
+
+    .nav-bar a:hover {
+        transform: scale(1.1);
+        color: var(--color-negro);
+    
+    
+    }
+    
+
+
+
 
     .titular {
         font-size: 40px;
@@ -358,16 +397,33 @@ li {
         margin: 15px;
         padding: 30px;
 
-   
-   
+
+
     }
 
-    header{
+    header {
 
-       
+
         background-size: 22vw;
     }
-    
+
+    .nav-bar {
+
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        background-color: var(--color-celeste);
+        border-bottom: var(--color-azul) solid 3px;
+
+
+    }
+
+   
+
+    .burger-menu {
+        display: none;
+    }
+
 
 
 
@@ -394,9 +450,19 @@ li {
     .nav-bar a {
 
         display: inline;
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        color: var(--color-blanco);
 
 
     }
+
+    .nav-bar a:hover {
+        transform: scale(1.1);
+        color: var(--color-negro);
+    
+    
+    }
+    
 
     .img-perfil-licht {
 
@@ -405,12 +471,29 @@ li {
     }
 
 
-    header{
+    header {
 
-       
+
         background-size: 18vw;
     }
-    
+
+    .nav-bar {
+
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        background-color: var(--color-celeste);
+        border-bottom: var(--color-azul) solid 3px;
+
+
+    }
+
+   
+
+    .burger-menu {
+        display: none;
+    }
+
 
 
 
