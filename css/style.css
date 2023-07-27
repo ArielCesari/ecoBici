@@ -180,6 +180,11 @@ li {
     text-align: center;
 }
 
+
+.fa-bicycle{
+    color: #008E51;
+    font-weight: bold;
+}
 /* Nosotros */
 
 .alumnos {
@@ -336,8 +341,8 @@ li {
 }
 
 #form button[type="submit"] {
-    background-color: var(--color-amarillo);
-    color: var(--color-negro);
+    background-color: #52B172;
+    color: var(--color-blanco);
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 5px;
