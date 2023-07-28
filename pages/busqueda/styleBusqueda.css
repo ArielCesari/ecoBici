@@ -7,11 +7,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
 }
 
-body {
-    background: #2681be;
+html {
+    background: #E6F4F1;
 }
 
 
@@ -54,14 +54,16 @@ li {
 .nav-bar {
     text-align: center;
     margin-top: 15px;
-    background-color: #E6F4F1;
+    background-color: #75AADB;
     border-bottom: 3px solid #CCD1E4;
 
 }
 
-.nav-bar a {
+
+
+.nav-bar  a {
     text-decoration: none;
-    color: var(--color-negro);
+    color: #00274D;
     margin-left: 5vw;
     margin-right: 5vw;
     display: flex;
@@ -86,6 +88,13 @@ img{
     align-items: center;
     flex-direction: column;
     margin-top: 1rem;
+}
+
+.img-ciudad {
+    padding-top:20px;
+    width: 100%;
+    
+    
 }
 
 @media (min-width: 585px) {
