@@ -657,6 +657,13 @@ li {
         padding: 10px;
     }
 
+    p{
+        text-align: justify;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 10px;
+    }
+
     .grafico-año4 {
 
         width: 90vw;
