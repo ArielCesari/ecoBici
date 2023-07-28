@@ -63,6 +63,10 @@ const infoArticulos = {
     Mataderos: {
       imagen: "../Img Barrios/Mataderos.png",
       nombre: "Mataderos",
+    },
+    Monte_Castro: {
+      imagen: "../Img Barrios/Monte Castro.png",
+      nombre: "Monserrat",
     }, 
     Monserrat: {
       imagen: "../Img Barrios/Monserrat.png",
