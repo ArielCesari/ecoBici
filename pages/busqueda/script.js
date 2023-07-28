@@ -142,45 +142,12 @@ const infoArticulos = {
     }, 
   };
 
-// function mostrarInformacionBarrio(barrio) {
-//   const infoBarrio = infoArticulos[barrio];
-//   const infoArticuloElement = document.getElementById("infoArticulo");
-
-//   infoArticuloElement.innerHTML = "";
-
-//   const nombreElement = document.createElement("h3");
-//   nombreElement.textContent = infoBarrio.nombre;
-
-//   const imagenElement = document.createElement("img");
-//   imagenElement.src = infoBarrio.imagen;
-//   imagenElement.alt = "Imagen del barrio";
-
-//   const descripcionElement = document.createElement("p");
-//   descripcionElement.textContent = infoBarrio.descripcion;
-
-//   infoArticuloElement.appendChild(nombreElement);
-//   infoArticuloElement.appendChild(imagenElement);
-//   infoArticuloElement.appendChild(descripcionElement);
-// }
-
-// const listaArticulos = document.getElementById("listaArticulos");
-
-// const articulos = listaArticulos.getElementsByTagName("li");
-// for (let i = 0; i < articulos.length; i++) {
-//   articulos[i].addEventListener("click", function () {
-//     const barrioSeleccionado = this.getAttribute("data-barrio");
-//     mostrarInformacionBarrio(barrioSeleccionado);
-//   });
-// }
-
 function mostrarInformacionBarrio(barrio) {
   const infoBarrio = infoArticulos[barrio];
   const infoArticuloElement = document.getElementById("infoArticulo");
 
-  // Limpiar el contenido anterior del contenedor
   infoArticuloElement.innerHTML = "";
 
-  // Crear elementos para mostrar la información del barrio
   const nombreElement = document.createElement("h3");
   nombreElement.textContent = infoBarrio.nombre;
 
@@ -188,19 +155,13 @@ function mostrarInformacionBarrio(barrio) {
   imagenElement.src = infoBarrio.imagen;
   imagenElement.alt = "Imagen del barrio";
 
-  const descripcionElement = document.createElement("p");
-  descripcionElement.textContent = infoBarrio.descripcion;
-
-  // Agregar los elementos al contenedor
   infoArticuloElement.appendChild(nombreElement);
   infoArticuloElement.appendChild(imagenElement);
   infoArticuloElement.appendChild(descripcionElement);
 }
 
-// Obtener el desplegable de barrios
 const selectBarrios = document.getElementById("selectBarrios");
 
-// Agregar evento de cambio al desplegable
 selectBarrios.addEventListener("change", function () {
   const barrioSeleccionado = this.value;
   mostrarInformacionBarrio(barrioSeleccionado);
