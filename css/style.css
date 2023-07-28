@@ -3,7 +3,7 @@
     --color-celeste: #75AADB;
     --color-azul: #00274D;
     --color-negro: #28161C;
-    --color-verde:#52B172;
+    --color-verde: #52B172;
 }
 
 
@@ -13,16 +13,19 @@ html {
     background-color: var(--color-blanco);
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
+
+}
+
+
+
+body {
+    margin: 0;
 }
 
 header {
 
     background-image: url(../img/fondo.jpg);
     background-size: 75vw;
-}
-
-body {
-    margin: 0;
 }
 
 .main-header {
@@ -355,7 +358,7 @@ li {
 }
 
 #form button[type="submit"] {
-    background-color:var(--color-verde);
+    background-color: var(--color-verde);
     color: var(--color-blanco);
     font-weight: bold;
     padding: 10px 20px;
@@ -406,19 +409,22 @@ li {
 
 /* graficos.html*/
 
-.grafico-año1, .grafico-año2, .grafico-año3, .grafico-año4{
+.grafico-año1,
+.grafico-año2,
+.grafico-año3,
+.grafico-año4 {
 
     border-radius: 10px;
-    margin:3px;
+    margin: 3px;
     border: solid 1px var(--color-azul)
 }
 
-.main-graficos{
+.main-graficos {
 
-    margin:10px
+    margin: 10px
 }
 
-.grafico-año1{
+.grafico-año1 {
 
     width: 85vw;
 
@@ -426,15 +432,15 @@ li {
 }
 
 .fade-in {
-   
+
     .grafico-año1 {
-        width:90vw;
+        width: 90vw;
         height: auto;
     }
 
     .grafico-año2 {
 
-        width:90vw;
+        width: 90vw;
         height: auto;
 
 
@@ -442,7 +448,7 @@ li {
 
     .grafico-año3 {
 
-        width:90vw;
+        width: 90vw;
         height: auto;
 
 
@@ -450,7 +456,7 @@ li {
 
     .grafico-año4 {
 
-        width:90vw;
+        width: 90vw;
         height: auto;
 
 
@@ -462,15 +468,18 @@ li {
     .fade-in {
         display: flex;
         align-items: center;
-        
-        .grafico-año1, .grafico-año2, .grafico-año3, .grafico-año4{
+
+        .grafico-año1,
+        .grafico-año2,
+        .grafico-año3,
+        .grafico-año4 {
             max-width: 50%;
             height: auto;
         }
     }
 
     .txto {
-     
+
         width: 45%;
     }
 }
@@ -526,11 +535,7 @@ li {
 
     }
 
-    header {
 
-
-        background-size: 22vw;
-    }
 
     .nav-bar {
 
@@ -558,9 +563,9 @@ li {
 
 
     .fade-in {
-   
+
         .grafico-año1 {
-            width:90vw;
+            width: 90vw;
             height: auto;
         }
 
@@ -581,7 +586,13 @@ li {
 
     .logo {
 
-        width: 20vw;
+        width: 8vw;
+    }
+
+    .logo-2 {
+
+        width: 8vw;
+        height: auto;
     }
 
     .titular {
@@ -616,8 +627,10 @@ li {
     header {
 
 
-        background-size: 18vw;
+        background-size: 15vw;
+
     }
+
 
     .nav-bar {
 
@@ -637,20 +650,21 @@ li {
         display: none;
     }
 
-    .contenedor-info {
-
-
+    .contenedor-info  {
+        text-align: justify;
+        margin-left: 5%;
+        margin-right: 5%;
         padding: 10px;
     }
 
     .grafico-año4 {
 
-        width:90vw;
+        width: 90vw;
         height: auto;
 
 
     }
-    
+
 
 
 
