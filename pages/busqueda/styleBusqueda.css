@@ -79,7 +79,12 @@ img{
     width: 90vw;
 }
 
-
+.container_maps{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
 
 @media (min-width: 585px) {
 

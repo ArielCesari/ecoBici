@@ -1,172 +1,174 @@
 
-document.addEventListener("DOMContentLoaded", function () {
-  const listaArticulos = document.getElementById("listaArticulos");
-  const infoArticulos = {
+const infoArticulos = {
     Agronomia: {
       imagen: "../Img Barrios/Agronomia.png",
-      descripcion: "Agronomia",
+      nombre: "Agronomia",
     },
     Almagro: {
       imagen: "../Img Barrios/Almagro.png",
-      descripcion: "Almagro",
+      nombre: "Almagro",
     },
     Balvanera: {
       imagen: "../Img Barrios/Balvanera.png",
-      descripcion: "Balvanera",
+      nombre: "Balvanera",
     },
     Barracas: {
       imagen: "../Img Barrios/Barracas.png",
-      descripcion: "Barracas",
+      nombre: "Barracas",
     },  
     Belgrano: {
       imagen: "../Img Barrios/Belgrano.png",
-      descripcion: "Belgrano",
+      nombre: "Belgrano",
     }, 
     Boedo: {
       imagen: "../Img Barrios/Boedo.png",
-      descripcion: "Boedo",
+      nombre: "Boedo",
     },  
     Caballito: {
       imagen: "../Img Barrios/Caballito.png",
-      descripcion: "Caballito",
+      nombre: "Caballito",
     }, 
     Chacarita: {
       imagen: "../Img Barrios/Chacarita.png",
-      descripcion: "Chacarita",
+      nombre: "Chacarita",
     },  
     Cohglan: {
       imagen: "../Img Barrios/Cohglan.png",
-      descripcion: "Cohglan",
+      nombre: "Cohglan",
     },  
     Colegiales: {
       imagen: "../Img Barrios/Colegiales.png",
-      descripcion: "Colegiales",
+      nombre: "Colegiales",
     }, 
     Constitucion: {
       imagen: "../Img Barrios/Constitucion.png",
-      descripcion: "Constitucion",
+      nombre: "Constitucion",
     }, 
     Flores: {
       imagen: "../Img Barrios/Flores.png",
-      descripcion: "Flores",
+      nombre: "Flores",
     }, 
     Floresta: {
       imagen: "../Img Barrios/Floresta.png",
-      descripcion: "Floresta",
+      nombre: "Floresta",
     }, 
     La_Boca: {
       imagen: "../Img Barrios/La Boca.png",
-      descripcion: "La Boca",
+      nombre: "La Boca",
     }, 
     Liniers: {
       imagen: "../Img Barrios/Liniers.png",
-      descripcion: "Liniers",
+      nombre: "Liniers",
     }, 
     Mataderos: {
       imagen: "../Img Barrios/Mataderos.png",
-      descripcion: "Mataderos",
+      nombre: "Mataderos",
     }, 
     Monserrat: {
       imagen: "../Img Barrios/Monserrat.png",
-      descripcion: "Monserrat",
+      nombre: "Monserrat",
     }, 
     Nueva_Pompeya: {
       imagen: "../Img Barrios/Nueva Pompeya.png",
-      descripcion: "Nueva Pompeya",
+      nombre: "Nueva Pompeya",
     }, 
     Nuñez: {
       imagen: "../Img Barrios/Nuñez.png",
-      descripcion: "Nuñez",
+      nombre: "Nuñez",
     }, 
     Palermo: {
       imagen: "../Img Barrios/Palermo.png",
-      descripcion: "Palermo",
+      nombre: "Palermo",
     },
     Parque_Avellaneda: {
       imagen: "../Img Barrios/Parque Avellaneda.png",
-      descripcion: "Parque Avellaneda",
+      nombre: "Parque Avellaneda",
     },
     Parque_Chacabuco: {
       imagen: "../Img Barrios/Parque Chacabuco.png",
-      descripcion: "Parque Chacabuco",
+      nombre: "Parque Chacabuco",
     }, 
     Parque_Chas: {
       imagen: "../Img Barrios/Parque Chas.png",
-      descripcion: "Parque Chas",
+      nombre: "Parque Chas",
     }, 
     Parque_Patricios: {
       imagen: "../Img Barrios/Parque Patricios.png",
-      descripcion: "Parque Patricios",
+      nombre: "Parque Patricios",
     }, 
     Paternal: {
       imagen: "../Img Barrios/Paternal.png",
-      descripcion: "Paternal",
+      nombre: "Paternal",
     },
     Recoleta: {
       imagen: "../Img Barrios/Recoleta.png",
-      descripcion: "Recoleta",
+      nombre: "Recoleta",
     }, 
     Retiro: {
       imagen: "../Img Barrios/Retiro.png",
-      descripcion: "Retiro",
+      nombre: "Retiro",
     }, 
     Saavedra: {
       imagen: "../Img Barrios/Saavedra.png",
-      descripcion: "Saavedra",
+      nombre: "Saavedra",
     },
     San_Cristobal: {
       imagen: "../Img Barrios/San Cristobal.png",
-      descripcion: "San Cristobal",
+      nombre: "San Cristobal",
     }, 
     San_Nicolas: {
       imagen: "../Img Barrios/San Nicolas.png",
-      descripcion: "San Nicolas",
+      nombre: "San Nicolas",
     },
     San_Telmo: {
       imagen: "../Img Barrios/San Telmo.png",
-      descripcion: "San Telmo",
+      nombre: "San Telmo",
     }, 
     Villa_Crespo: {
       imagen: "../Img Barrios/Villa Crespo.png",
-      descripcion: "Villa Crespo",
+      nombre: "Villa Crespo",
     }, 
     Villa_del_Parque: {
       imagen: "../Img Barrios/Villa del Parque.png",
-      descripcion: "Villa del Parque",
+      nombre: "Villa del Parque",
     },
     Villa_Devoto: {
       imagen: "../Img Barrios/Villa Devoto.png",
-      descripcion: "Villa Devoto",
+      nombre: "Villa Devoto",
     }, 
     Villa_Urquiza: {
       imagen: "../Img Barrios/Villa Urquiza.png",
-      descripcion: "Villa Urquiza",
+      nombre: "Villa Urquiza",
     }, 
   };
 
-  const buscador = document.getElementById("buscador");
-  buscador.addEventListener("input", function () {
-    const filtro = buscador.value.toLowerCase();
-    const articulos = listaArticulos.getElementsByTagName("li");
+function mostrarInformacionBarrio(barrio) {
+  const infoBarrio = infoArticulos[barrio];
+  const infoArticuloElement = document.getElementById("infoArticulo");
 
-    for (const articulo of articulos) {
-      const nombreArticulo = articulo.textContent.toLowerCase();
-      if (nombreArticulo.includes(filtro)) {
-        articulo.style.display = "block";
-      } else {
-        articulo.style.display = "none";
-      }
-    }
+  infoArticuloElement.innerHTML = "";
+
+  const nombreElement = document.createElement("h3");
+  nombreElement.textContent = infoBarrio.nombre;
+
+  const imagenElement = document.createElement("img");
+  imagenElement.src = infoBarrio.imagen;
+  imagenElement.alt = "Imagen del barrio";
+
+  const descripcionElement = document.createElement("p");
+  descripcionElement.textContent = infoBarrio.descripcion;
+
+  infoArticuloElement.appendChild(nombreElement);
+  infoArticuloElement.appendChild(imagenElement);
+  infoArticuloElement.appendChild(descripcionElement);
+}
+
+const listaArticulos = document.getElementById("listaArticulos");
+
+const articulos = listaArticulos.getElementsByTagName("li");
+for (let i = 0; i < articulos.length; i++) {
+  articulos[i].addEventListener("click", function () {
+    const barrioSeleccionado = this.getAttribute("data-barrio");
+    mostrarInformacionBarrio(barrioSeleccionado);
   });
-
-  listaArticulos.addEventListener("click", function (event) {
-    const articuloSeleccionado = event.target.textContent;
-    const infoSeleccionada = infoArticulos[articuloSeleccionado];
-
-    const infoArticulo = document.getElementById("infoArticulo");
-    infoArticulo.innerHTML = `
-      <h3>${infoSeleccionada.descripcion}</h3>
-      <img src="${infoSeleccionada.imagen}" alt="${articuloSeleccionado}">
-    `;
-  });
-});
+}
