@@ -202,6 +202,7 @@ li {
     padding: 15PX;
 }
 
+
 /* Nosotros */
 
 .alumnos {
@@ -501,7 +502,7 @@ li {
 
     .contenedor-info {
 
-
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
         padding: 10px;
     }
 
