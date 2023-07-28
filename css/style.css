@@ -421,6 +421,13 @@ li {
     margin: 3px;
     border: solid 1px var(--color-azul)
 }
+.graficoaño{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 3px;
+    border: solid 1px var(--color-azul)
+}
 
 .main-graficos {
 
@@ -465,6 +472,10 @@ li {
             opacity: 1;
             justify-content: space-around;
             flex-direction: row;
+        }
+        .graficoaño{
+            max-width: 100%;
+            height: auto;
         }
     .txto {
         width: 45%;
@@ -511,7 +522,10 @@ li {
         flex-direction: column;
     }
 
-
+    .graficoaño{
+        max-width: 100%;
+        height: auto;
+    }
 
     .titular {
         font-size: 40px;
@@ -582,6 +596,10 @@ li {
       justify-content: space-around;
       display: flex;
       flex-direction: row;
+    }
+    .graficoaño{
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -656,6 +674,10 @@ li {
         justify-content: space-around;
     }
 
+    .graficoaño{
+        max-width: 100%;
+        height: auto;
+    }
 
     .burger-menu,
     .burger-container {
