@@ -434,44 +434,26 @@ li {
 
 }
 
+.grafico-año1,
+.grafico-año2,
+.grafico-año3,
+.grafico-año4 {
+  width: 90vw;
+  height: auto;
+}
+
 .fade-in {
-
-    .grafico-año1 {
-        width: 90vw;
-        height: auto;
-    }
-
-    .grafico-año2 {
-
-        width: 90vw;
-        height: auto;
-
-
-    }
-
-    .grafico-año3 {
-
-        width: 90vw;
-        height: auto;
-
-
-    }
-
-    .grafico-año4 {
-
-        width: 90vw;
-        height: auto;
-
-
-    }
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+.fade-in-active {
+    opacity: 1;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 
 @media (min-width: 769px) {
-    .fade-in {
-        display: flex;
-        align-items: center;
-
         .grafico-año1,
         .grafico-año2,
         .grafico-año3,
@@ -479,10 +461,12 @@ li {
             max-width: 50%;
             height: auto;
         }
-    }
-
+        .fade-in-active {
+            opacity: 1;
+            justify-content: space-around;
+            flex-direction: row;
+        }
     .txto {
-
         width: 45%;
     }
 }
@@ -493,7 +477,6 @@ li {
 /* Medias queries */
 
 @media (min-width: 585px) {
-
 
     .nav-bar a {
 
@@ -522,8 +505,11 @@ li {
         height:auto;
     }
 
-
-
+    .fade-in-active {
+        opacity: 1;
+        justify-content: space-around;
+        flex-direction: column;
+    }
 
 
 
@@ -572,34 +558,32 @@ li {
 
     .contenedor-info {
 
-        
         padding: 10px;
     }
-
-
-    .fade-in {
-
+    
         .grafico-año1 {
             width: 90vw;
             height: auto;
         }
-
-    }
+    
 
     header {
-
 
         background-size: 22vw;
 
     }
 
-  
-
-
-
 
 }
 
+@media screen and (min-width: 1025px) {
+    .fade-in-active {
+      opacity: 1;
+      justify-content: space-around;
+      display: flex;
+      flex-direction: row;
+    }
+}
 
 @media (min-width: 1050px) {
 
@@ -666,6 +650,11 @@ li {
 
     }
 
+    .fade-in-active {
+        opacity: 1;
+        display: flex;
+        justify-content: space-around;
+    }
 
 
     .burger-menu,
@@ -692,11 +681,6 @@ li {
         width: 90vw;
         height: auto;
 
-
     }
-
-
-
-
 
 }
