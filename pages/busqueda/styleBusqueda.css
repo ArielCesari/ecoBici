@@ -76,10 +76,15 @@ li {
 }
 
 img{
-    width: 90vw;
+    width: 50vw;
 }
 
-
+.container_maps{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    align-items: center;
+}
 
 @media (min-width: 585px) {
 
